@@ -1,8 +1,61 @@
 @import "bootstrap";
 
 .navbar {
-  background-color: #00FF00 !important;
+  background-color: #000000 !important;
 }
+.nav-link {
+  color: white !important;
+}
+
+.jumbotron {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#page-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#home-jumbotron {
+  background-image: asset-url('patrick-fore-0gkw_9fy0eQ-unsplash.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  line-height: 500px;
+}
+
+#inner {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgray;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
