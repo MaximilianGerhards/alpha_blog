@@ -1,6 +1,13 @@
 <h1 class="text-center mt-4">Listing all articles</h1>
+<div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
 
 <%= render 'articles' %>
+
+<div class="flickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+</div>
 
 <div class="row justify-content-md-center">
     <div class="col-2 mt_4 mb-4 text-center">
