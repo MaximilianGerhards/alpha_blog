@@ -16,7 +16,9 @@
                         <h5 class="card-title"><%= link_to profile_image_of(user, size: 120), user %></h5>
                         <p class="card-text"><%= pluralize(user.articles.length, "article") %></p>
                         <%= link_to 'View profile', user_path(user), class: "btn btn-success" %>
-                        <%= link_to 'Edit profile', edit_user_path(user), class: "btn btn-primary" %>
+                        <% if current_user == user %>
+                            <%= link_to 'Edit profile', edit_user_path(user), class: "btn btn-primary" %>
+                        <% end %>
                     </div>
                     <div class="card-footer text-body-secondary">
                         <small>
