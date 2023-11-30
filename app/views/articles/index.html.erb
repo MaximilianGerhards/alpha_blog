@@ -9,8 +9,10 @@
     <%= will_paginate @articles, :container => false %>
 </div>
 
-<div class="row justify-content-md-center">
-    <div class="col-2 mt_4 mb-4 text-center">
-        <%= link_to 'Add new article', new_article_path, class: "btn btn-success" %>
+<% if logged_in? %>
+    <div class="row justify-content-md-center">
+        <div class="col-2 mt_4 mb-4 text-center">
+            <%= link_to 'Add new article', new_article_path, class: "btn btn-success" %>
+        </div>
     </div>
-</div>
+<% end %>
