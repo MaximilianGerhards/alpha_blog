@@ -19,6 +19,13 @@
                     </div>
                 </div>
 
+                <div class="input-group row mb-3">
+                    <%= f.label :category, class: "col-2 col-form-label text-light" %>
+                    <div class="col-10">
+                        <%= f.collection_select(:category_ids, Category.all, :id, :name, {prompt: "Select all appropriate categories (can be empty)"}, {multiple: true, class: "form-select rounded"}) %>
+                    </div>
+                </div>
+
                 <div class="input-group d-flex justify-content-center">
                     <%= f.submit class: "btn btn-outline-light btn-lg" %>
                 </div>
